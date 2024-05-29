@@ -18,7 +18,7 @@ const styles = {
     section: {
         padding: "80px 0px",
         backgroundColor: "lightblue",
-        borderRadius: "8px",
+        borderRadius: "0px",
     },
     title: {
         fontSize: "48px",
