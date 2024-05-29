@@ -1,8 +1,8 @@
+import type { Metadata } from "next";
 import HomeContent from "../components/HomeContent";
 import HomeOrnekBir from "../components/HomeOrnekBir";
 import HomeOrnekIki from "../components/HomeOrnekIki";
 import SplideComponent from "../components/SplideComponent";
-import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Home",
