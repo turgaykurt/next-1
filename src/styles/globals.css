@@ -195,6 +195,11 @@ a:link {
     color: #f00; /* Aktif sayfa rengi */
 }
 
+.homecontent {
+    background: lightcyan;
+    padding: 80px 0px;
+}
+
 .ornek-1 {
     background: yellow;
     padding: 80px 0px;
