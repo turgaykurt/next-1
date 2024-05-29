@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import blogPosts from "../data/blogPosts1.json";
+import blogPosts from "../data/blogPosts.json";
 
 const BlogHome = () => {
     // Tarih formatlama fonksiyonu
