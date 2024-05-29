@@ -2,10 +2,9 @@ import "../app/styles/globals.css";
 import Navbar from "../components/Navbar";
 import { ReactNode } from "react";
 
-// RootLayout bileşeni için prop türünü tanımlıyoruz
-type RootLayoutProps = {
+interface RootLayoutProps {
     children: ReactNode;
-};
+}
 
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
