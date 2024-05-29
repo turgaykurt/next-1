@@ -3,6 +3,7 @@ import HomeContent from "../components/HomeContent";
 import HomeOrnekBir from "../components/HomeOrnekBir";
 import HomeOrnekIki from "../components/HomeOrnekIki";
 import SplideComponent from "../components/SplideComponent";
+import HomeBlog from "../components/HomeBlog";
 
 export const metadata: Metadata = {
     title: "Home",
@@ -19,6 +20,7 @@ export default function Home() {
                 content="Bu açıklamayı buraya yazıyorum ve sectionda işaretlediğim yere geliyor."
             />
             <SplideComponent />
+            <HomeBlog />
         </div>
     );
 }
