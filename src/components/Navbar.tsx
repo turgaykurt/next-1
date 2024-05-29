@@ -41,20 +41,20 @@ const Navbar = () => {
                         </li>
                         <li>
                             <Link
+                                href="/blog"
+                                className={pathname === "/blog" ? "active" : ""}
+                            >
+                                Blog
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
                                 href="/contact"
                                 className={
                                     pathname === "/contact" ? "active" : ""
                                 }
                             >
                                 Contact
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/blog"
-                                className={pathname === "/blog" ? "active" : ""}
-                            >
-                                Blog
                             </Link>
                         </li>
                     </ul>
