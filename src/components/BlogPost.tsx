@@ -10,10 +10,12 @@ interface BlogPostProps {
 
 const BlogPost: FC<BlogPostProps> = ({ post }) => {
     return (
-        <div>
-            <h1>{post.title}</h1>
-            <p>{post.content}</p>
-        </div>
+        <section className="homecontent">
+            <div className="kapsayici">
+                <h1>{post.title}</h1>
+                <p>{post.content}</p>
+            </div>
+        </section>
     );
 };
 
