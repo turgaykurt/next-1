@@ -35,7 +35,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-GitHub'daki dosyayı güncelleme için:
+GitHub'daki dosyayı güncellemek için terminal kodları:
 git add .
-git commit -m "Fix component naming conflict"
+git commit -m "v3"
 git push origin main

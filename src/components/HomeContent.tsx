@@ -2,7 +2,7 @@ const HomeContent = () => {
     return (
         <section className="homecontent">
             <div className="kapsayici">
-                <h1>V3 Welcome to Our Home Page</h1>
+                <h1>V4 Welcome to Our Home Page</h1>
                 <p>This is the home page content.</p>
             </div>
         </section>
