@@ -3,6 +3,17 @@ import Image from "next/image";
 import blogPosts from "../data/blogPosts.json";
 
 const BlogList = () => {
+    // Tarih formatlama fonksiyonu
+    const formatDate = (dateString: string) => {
+        const date = new Date(dateString);
+        return new Intl.DateTimeFormat("tr-TR", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+            weekday: "long",
+        }).format(date);
+    };
+
     return (
         <div className="blog">
             <div className="kapsayici">
@@ -19,6 +30,7 @@ const BlogList = () => {
                                 />
                                 <h3>{post.title}</h3>
                                 <p>{post.content}</p>
+                                <small>{formatDate(post.date)}</small>
                             </Link>
                         </li>
                     ))}

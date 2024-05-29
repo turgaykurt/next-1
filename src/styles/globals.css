@@ -192,7 +192,7 @@ a:link {
 }
 
 .nav .menu a.active {
-    color: #f00; /* Aktif sayfa rengi */
+    color: yellow; /* Aktif sayfa rengi */
 }
 
 .homecontent {
