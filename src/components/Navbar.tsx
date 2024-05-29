@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div className="sutun">
                     <Link href="/">
                         <Image
-                            src="next.svg"
+                            src="/next.svg"
                             alt="Next.js Logo"
                             width={180}
                             height={37}

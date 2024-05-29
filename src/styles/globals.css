@@ -252,3 +252,25 @@ a:link {
     height: auto;
     margin-bottom: 30px;
 }
+
+.blogpost {
+    padding: 80px 0px;
+    background: lightgoldenrodyellow;
+}
+
+.blogpost .sutun {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.blogpost img {
+    aspect-ratio: 5/2;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}

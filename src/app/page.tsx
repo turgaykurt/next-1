@@ -3,6 +3,11 @@ import HomeOrnekBir from "../components/HomeOrnekBir";
 import HomeOrnekIki from "../components/HomeOrnekIki";
 import SplideComponent from "../components/SplideComponent";
 
+export const metadata: Metadata = {
+    title: "Home",
+    description: "Home - Get in touch with us through this page.",
+};
+
 export default function Home() {
     return (
         <div>
