@@ -1,4 +1,14 @@
-const BlogPost = ({ post }) => {
+import { FC } from "react";
+
+interface BlogPostProps {
+    post: {
+        id: number;
+        title: string;
+        content: string;
+    };
+}
+
+const BlogPost: FC<BlogPostProps> = ({ post }) => {
     return (
         <div>
             <h1>{post.title}</h1>
