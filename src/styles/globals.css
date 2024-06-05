@@ -19,8 +19,7 @@ body {
 button,
 select,
 form,
-input {
-}
+input {}
 
 section {
     margin: 0px;
@@ -190,7 +189,8 @@ a:link {
 }
 
 .nav .menu a.active {
-    color: yellow; /* Aktif sayfa rengi */
+    color: yellow;
+    /* Aktif sayfa rengi */
 }
 
 .homecontent {
@@ -271,4 +271,108 @@ a:link {
     width: 100%;
     height: auto;
     margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* ---------- single.php ---------- */
+figure {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    unicode-bidi: isolate;
+}
+
+.single-post .kapsayici {
+    width: 100%;
+    max-width: 1040px;
+    padding: 0px 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.single-post .blog-giris {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-post .blog-giris img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.single-post .blog-giris h1 {
+    font-size: 76px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.single-post .blog-giris .baslik-aciklama p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: #999999;
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+.single-post .blog-icerik {
+    padding: 0px 80px;
+    margin: 80px 0px;
+}
+
+.single-post .blog-icerik img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 40px 0px;
+}
+
+.single-post .blog-icerik h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 40px 0px;
+}
+
+.single-post .blog-icerik p {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #999999;
+    margin: 30px 0px;
+}
+
+.single-post .blog-icerik blockquote {
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.3;
+    font-style: normal;
+    color: #000;
+    margin: 60px 0px;
+    padding: 0px 100px 0px 30px;
+    border-left: 1px solid #E5E5E5;
+}
+
+.single-post .blog-icerik blockquote cite {
+    font-style: normal;
+}
+
+.single-post .blog-icerik blockquote p {
+    order: 1;
+    margin: 30px 0px 0px 0px;
 }
