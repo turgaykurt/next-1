@@ -3,8 +3,9 @@ import Image from "next/image";
 
 const fetchData = async () => {
     const res = await fetch(
-        "https://nextjswp.turgaykurt.com/wp-content/uploads/json/all-posts.json"
-    );
+        "https://nextjswp.turgaykurt.com/wp-content/uploads/json/all-posts.json", {
+            cache: "no-cache",
+          });
     return res.json();
 };
 
