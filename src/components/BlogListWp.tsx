@@ -1,10 +1,11 @@
 import Link from "next/link";
 
 const fetchData = async () => {
-    const blogPosts = await fetch(
-        "https://nextjswp.turgaykurt.com/wp-content/uploads/json/all-posts.json"
-    );
-    return blogPosts.json();
+    const res = await fetch(
+        "https://nextjswp.turgaykurt.com/wp-content/uploads/json/all-posts.json", {
+            cache: "no-cache",
+          });
+    return res.json();
 };
 
 const Page = async () => {
