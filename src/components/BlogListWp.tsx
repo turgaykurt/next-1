@@ -15,7 +15,7 @@ const Page = async () => {
             <div className="kapsayici">
                 <h1>Blog JSON Veri Çekme</h1>
                 <ul className="sutun">
-                    {posts.map((post) => (
+                    {posts.map((post: any) => (
                         <li className="kart" key={post.id}>
                             <Link href={`/blog-wp/${post.id}`}>
                                 <div>{post.id}</div>
