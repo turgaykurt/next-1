@@ -13,7 +13,7 @@ const Page = async () => {
     return (
         <div className="blog">
             <div className="kapsayici">
-                <h1>Blog JSON Veri Çekme</h1>
+                <h1>Blog WP JSON Veri Çekme</h1>
                 <ul className="sutun">
                     {posts.map((post: any) => (
                         <li className="kart" key={post.id}>

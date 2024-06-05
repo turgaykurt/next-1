@@ -49,6 +49,14 @@ const Navbar = () => {
                         </li>
                         <li>
                             <Link
+                                href="/blog-wp"
+                                className={pathname === "/blog-wp" ? "active" : ""}
+                            >
+                                Blog WP
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
                                 href="/contact"
                                 className={
                                     pathname === "/contact" ? "active" : ""
