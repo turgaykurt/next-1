@@ -1,42 +1,46 @@
 import Link from "next/link";
 
-const fetchData = async () => {
+async function getData() {
     const res = await fetch(
-        "https://nextjswp.turgaykurt.com/wp-content/uploads/json/all-posts.json", {
-            cache: "no-cache",
-          });
-    return res.json();
-};
+        `${process.env.baseSite}/wp-content/uploads/json/posts/`
+    );
 
-const Page = async () => {
-    const posts = await fetchData();
+    if (!res.ok) {
+        throw new Error("Failed to fetch data");
+    }
+
+    return res.json();
+}
+
+export default async function Page() {
+    const data = await getData();
 
     return (
         <div className="blog">
             <div className="kapsayici">
-                <h1>Blog WP JSON Veri Çekme</h1>
+                <h1>Blog WP JSON Veri Çekme {process.env.baseSite}</h1>
                 <ul className="sutun">
-                    {posts.map((post: any) => (
-                        <li className="kart" key={post.id}>
-                            <Link href={`/blog-wp/${post.id}`}>
-                                <div>{post.id}</div>
-                                <div
-                                    dangerouslySetInnerHTML={{
-                                        __html: post.title,
-                                    }}
-                                />
-                                <div
-                                    dangerouslySetInnerHTML={{
-                                        __html: post.content,
-                                    }}
-                                />
-                            </Link>
-                        </li>
-                    ))}
+                    {data.map((item: any) => {
+                        return (
+                            <li className="kart" key={item.slug}>
+                                <Link href={`/blog-wp/${item.id}`}>
+                                    <div>{item.id}</div>
+                                    <div
+                                        dangerouslySetInnerHTML={{
+                                            __html: item.title,
+                                        }}
+                                    />
+                                    <div
+                                        dangerouslySetInnerHTML={{
+                                            __html: item.content,
+                                        }}
+                                    />
+                                </Link>
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         </div>
     );
-};
-
-export default Page;
+}
