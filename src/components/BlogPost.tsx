@@ -35,7 +35,6 @@ const BlogPost: FC<BlogPostProps> = ({ post }) => {
                 />
                 <p>{post.content}</p>
                 <p>{formatDate(post.date)}</p>{" "}
-                {/* Tarih formatlama fonksiyonunu burada kullanıyoruz */}
             </div>
         </section>
     );

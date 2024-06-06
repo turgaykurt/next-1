@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 async function getData() {
     const res = await fetch(
@@ -24,17 +25,19 @@ export default async function Page() {
                         return (
                             <li className="kart" key={item.slug}>
                                 <Link href={`/blog-wp/${item.slug}`}>
-                                    <div>{item.id}</div>
-                                    <div
+                                    <Image
+                                        src={item.thumbnail_url}
+                                        alt="Blog Görseli"
+                                        width={500}
+                                        height={300}
+                                    />
+                                    <h3>{item.title}</h3>
+                                    <p
                                         dangerouslySetInnerHTML={{
-                                            __html: item.title,
+                                            __html: item.excerpt,
                                         }}
                                     />
-                                    <div
-                                        dangerouslySetInnerHTML={{
-                                            __html: item.content,
-                                        }}
-                                    />
+                                    <small>{item.published_date}</small>
                                 </Link>
                             </li>
                         );
