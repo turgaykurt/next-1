@@ -1,6 +1,6 @@
 async function getData(postSlug: string) {
     const res = await fetch(
-        `${process.env.baseSite}/wp-content/uploads/json/posts/?slug=${postSlug}`
+        `https://nextjswp.turgaykurt.com/wp-content/uploads/json/posts/?slug=${postSlug}`
     );
 
     if (!res.ok) {
