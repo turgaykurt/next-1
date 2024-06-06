@@ -23,7 +23,7 @@ export default async function Page() {
                     {data.map((item: any) => {
                         return (
                             <li className="kart" key={item.slug}>
-                                <Link href={`/blog-wp/${item.id}`}>
+                                <Link href={`/blog-wp/${item.slug}`}>
                                     <div>{item.id}</div>
                                     <div
                                         dangerouslySetInnerHTML={{

@@ -1,6 +1,6 @@
-async function getData(postId: string) {
+async function getData(postSlug: string) {
     const res = await fetch(
-        `${process.env.baseSite}/wp-content/uploads/json/posts/?id=` + postId
+        `${process.env.baseSite}/wp-content/uploads/json/posts/?slug=${postSlug}`
     );
 
     if (!res.ok) {
